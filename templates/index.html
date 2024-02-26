@@ -1,0 +1,39 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>主页</title>
+    <!-- 引入 layui 相关的 CSS 文件 -->
+    <link rel="stylesheet" href="/static/layui/css/layui.css">
+</head>
+<body>
+    <div class="layui-container">
+        <h1>欢迎来到主页</h1>
+        <p>您已成功登录！</p>
+        <!-- 待办事项列表 -->
+        <div class="layui-row">
+            <div class="layui-col-md6">
+                <table class="layui-table">
+                    <colgroup>
+                        <col width="50">
+                        <col>
+                        <col width="150">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>内容</th>
+                            <th>操作</th>
+                        </tr> 
+                    </thead>
+                    <tbody id="todo-list">
+                        <!-- 待办事项列表将动态插入到此处 -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
